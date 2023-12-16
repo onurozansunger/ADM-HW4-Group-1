@@ -6,7 +6,7 @@ This project was carried out by Group 1 from Algorithmic Methods for Data Mining
 | NAME and SURNAME | EMAIL |
 | --- | --- |
 | Rahim Rahimov| rahimov.1921843@studenti.uniroma1.it
-| Petra Udovicic| |
+| Petra Udovicic| petra.udovicic1997@gmail.com|
 | Jacopo Orsini | orsini.2099929@studenti.unirom1.it |
 | | |
 ## Question 2

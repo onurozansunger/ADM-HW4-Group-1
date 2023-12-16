@@ -5,8 +5,8 @@ This project was carried out by Group 1 from Algorithmic Methods for Data Mining
 
 | NAME and SURNAME | EMAIL |
 | --- | --- |
-| Pasquale Luca Tommasino | tommasino.1912107@studenti.uniroma1.it | 
-| |  |
+| | | 
+| | |
 | Jacopo Orsini | orsini.2099929@studenti.unirom1.it |
 | | |
 ## Question 2

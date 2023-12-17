@@ -24,13 +24,13 @@ The second question of the Homework 4 concerns topics such as feature engeneerin
 4. Analysis of the results: ehe last part of the code is dedicated to the analysis of the results through the pivot tables
 ## Command Line Question (CLQ)
 For this Command Line Question (CLQ), we'll need to use command line tools to analyze a dataset and answer specific questions about Netflix usage.
-1. Find the Most-Watched Netflix Title: Using command line tools, you will need to process the dataset to determine which Netflix title has been watched the most. This might involve sorting, counting, and filtering operations.
-2. Calculate Average Time Between Clicks: You will calculate the average time interval between subsequent clicks on Netflix.com. This will likely require you to manipulate timestamp data and calculate averages.
-3. Identify the User with the Most Time Spent on Netflix: You'll need to aggregate data to find out which user has spent the most time watching Netflix. This involves summing up watch times per user and identifying the user with the maximum total.
+1. Find the Most-Watched Netflix Title: Using command line tools, we will need to process the dataset to determine which Netflix title has been watched the most. This might involve sorting, counting, and filtering operations.
+2. Calculate Average Time Between Clicks: We will calculate the average time interval between subsequent clicks on Netflix.com. This will likely require us to manipulate timestamp data and calculate averages.
+3. Identify the User with the Most Time Spent on Netflix: We'll need to aggregate data to find out which user has spent the most time watching Netflix. This involves summing up watch times per user and identifying the user with the maximum total.
 ## Algorithmic Question
  In this problem, we need to help Federico maximize his final score at a university with a unique grading system. We will:
 1. Write a recursive algorithm to calculate the highest possible final score Federico can achieve. The code should take his initial score and a list of exam scores as input.
-2. Analyze the time complexity of your recursive solution using big-O notation, demonstrating whether or not it is efficient.
+2. Analyze the time complexity of our recursive solution using big-O notation, demonstrating whether or not it is efficient.
 3. If the recursive solution is found to be inefficient, optimize the code using a different approach, and again analyze its time complexity to prove the improvement.
 4. Challenge me to provide a third, potentially more optimized implementation, and analyze its time complexity.
 We will use example inputs and outputs to test and demonstrate the functionality of the code. The challenge includes not only implementing the algorithms but also analyzing and optimizing their efficiency.

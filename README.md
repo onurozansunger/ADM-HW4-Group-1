@@ -8,6 +8,7 @@ This project was carried out by Group 1 from Algorithmic Methods for Data Mining
 | Rahim Rahimov| rahimov.1921843@studenti.uniroma1.it
 | Petra Udovicic| petra.udovicic1997@gmail.com|
 | Jacopo Orsini | orsini.2099929@studenti.unirom1.it |
+| Onur Ozan Sunger| sunger.2113119@studenti.uniroma1.it|
 | | |
 ## Question 1
 The goal of the first question was to provide a 5 movies that the given user will most likely find interesting. The recommendation system had to be implemented and its steps were the following:

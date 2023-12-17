@@ -1,5 +1,6 @@
-# ADM-HW4-Group-1
-HW4 for ADM course
+# ADM-HW4
+This repository contains the source code, notebooks, and additional materials related to Assignment 4 of the "Algorithms for Data Mining" course (23/24) from the Data Science Master's program at Sapienza University of Rome. Below, you will find an overview of the contents of this repository.
+
 ## Introduction
 This project was carried out by Group 1 from Algorithmic Methods for Data Mining (ADM) course, made of the mebers:
 

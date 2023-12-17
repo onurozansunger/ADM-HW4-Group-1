@@ -22,3 +22,10 @@ The second question of the Homework 4 concerns topics such as feature engeneerin
 2. Dimensinality reduction: after ggettib the new dataset, 2 dimensionality reduction techniques has been imlemented: Principal Component Analysis (PCA) and Factor Analysis for Mixed Data (FAMD); just this second technique has been used to perform the kmeans algorithm and this choice is justified by its characteristic of dealing with datasets that cointain both numberical and categorical features. 
 3. Clsutering: a kmeans algorithm has been implemented from scratch, firstly without the random inizialization and then with it, together with 2 methods to find the optimal number of clsuters. In the last point of this third part, is also present another clustering alorithm suggested by ChatGPT with some considerations about. 
 4. Analysis of the results: ehe last part of the code is dedicated to the analysis of the results through the pivot tables
+## Algorithmic Question
+ In this problem, we need to help Federico maximize his final score at a university with a unique grading system. We will:
+a) Write a recursive algorithm to calculate the highest possible final score Federico can achieve. The code should take his initial score and a list of exam scores as input.
+b) Analyze the time complexity of your recursive solution using big-O notation, demonstrating whether or not it is efficient.
+c) If the recursive solution is found to be inefficient, optimize the code using a different approach, and again analyze its time complexity to prove the improvement.
+d) Challenge me to provide a third, potentially more optimized implementation, and analyze its time complexity.
+We will use example inputs and outputs to test and demonstrate the functionality of the code. The challenge includes not only implementing the algorithms but also analyzing and optimizing their efficiency.

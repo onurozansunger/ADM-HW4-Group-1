@@ -1,37 +1,56 @@
-# ADM-HW4
-This repository contains the source code, notebooks, and additional materials related to Assignment 4 of the "Algorithms for Data Mining" course (23/24) from the Data Science Master's program at Sapienza University of Rome. Below, you will find an overview of the contents of this repository.
+# Movie Recommendation & User Clustering
 
-## Introduction
-This project was carried out by Group 1 from Algorithmic Methods for Data Mining (ADM) course, made of the mebers:
+A multi-part data-science project covering **recommendation systems**, **clustering** and **algorithmic optimization** on Netflix-like access data.
 
-| NAME and SURNAME | EMAIL |
-| --- | --- |
-| Rahim Rahimov| rahimov.1921843@studenti.uniroma1.it
-| Petra Udovicic| petra.udovicic1997@gmail.com|
-| Jacopo Orsini | orsini.2099929@studenti.unirom1.it |
-| Onur Ozan Sunger| sunger.2113119@studenti.uniroma1.it|
-| | |
-## Question 1
-The goal of the first question was to provide a 5 movies that the given user will most likely find interesting. The recommendation system had to be implemented and its steps were the following:
-1. Extracting the top 10 movies for each user. The movie on which the user clicked on the biggest amount of times was considered the movie top one for that user.
-2. Building a minhash function from scratch to get users with similar genre interest in the sam bucket. The list of all genres were made and 3 columns have been added to the dataframe. The first column had lists with 0 if the genre that is in the same position in the list of genres is not present in that row and 1 if the genre is present in the row. The other column had the result of our 12 hash functions. The last column added provided information about the result of the minhash function that reduced our 12 scores gotten from hash functions to just 3 scores.
-3. We identified two most similar users to the user from the input and made a list of all the movies they both watched. If the list has 5 elements, these five movies will be recommended to the user. If it has less, the rest of the list of movies recommended will be filled with top movies from the most similar user. If the list has more then 5 elements, the five movies that have the biggest number of clicks by the most similar user will be recommended.
-## Question 2
-The second question of the Homework 4 concerns topics such as feature engeneering, dimensionality reduction and clsutering. In details, starting from a dataset about the Netflix's accesses by users from Kaggle, the following functions has been implemented:
-1. Feature engeneering: the users has been "grouped by" in oreder to have for each row a unique user and then 15 new features has been created starting from the original features. 
-2. Dimensinality reduction: after ggettib the new dataset, 2 dimensionality reduction techniques has been imlemented: Principal Component Analysis (PCA) and Factor Analysis for Mixed Data (FAMD); just this second technique has been used to perform the kmeans algorithm and this choice is justified by its characteristic of dealing with datasets that cointain both numberical and categorical features. 
-3. Clsutering: a kmeans algorithm has been implemented from scratch, firstly without the random inizialization and then with it, together with 2 methods to find the optimal number of clsuters. In the last point of this third part, is also present another clustering alorithm suggested by ChatGPT with some considerations about. 
-4. Analysis of the results: ehe last part of the code is dedicated to the analysis of the results through the pivot tables
-## Command Line Question (CLQ)
-For this Command Line Question (CLQ), we'll need to use command line tools to analyze a dataset and answer specific questions about Netflix usage.
-1. Find the Most-Watched Netflix Title: Using command line tools, we will need to process the dataset to determine which Netflix title has been watched the most. This might involve sorting, counting, and filtering operations.
-2. Calculate Average Time Between Clicks: We will calculate the average time interval between subsequent clicks on Netflix.com. This will likely require us to manipulate timestamp data and calculate averages.
-3. Identify the User with the Most Time Spent on Netflix: We'll need to aggregate data to find out which user has spent the most time watching Netflix. This involves summing up watch times per user and identifying the user with the maximum total.
-## Algorithmic Question
- In this problem, we need to help Federico maximize his final score at a university with a unique grading system. We will:
-1. Write a recursive algorithm to calculate the highest possible final score Federico can achieve. The code should take his initial score and a list of exam scores as input.
-2. Analyze the time complexity of our recursive solution using big-O notation, demonstrating whether or not it is efficient.
-3. If the recursive solution is found to be inefficient, optimize the code using a different approach, and again analyze its time complexity to prove the improvement.
-4. Challenge me to provide a third, potentially more optimized implementation, and analyze its time complexity.
-We will use example inputs and outputs to test and demonstrate the functionality of the code. The challenge includes not only implementing the algorithms but also analyzing and optimizing their efficiency.
+Developed at **Sapienza University of Rome** as part of the MSc in Data Science (2023/24).
 
+## Project Overview
+
+The project is structured into four modules, each focused on a different problem on top of a real-world Netflix-style dataset:
+
+### 1. Movie Recommendation System (MinHash)
+
+A from-scratch recommendation pipeline that suggests 5 movies a given user is most likely to enjoy:
+
+1. Extract each user's top-10 most-clicked movies.
+2. Build a **MinHash** scheme from scratch over genre interests, using 12 hash functions reduced to 3 MinHash signatures, so users with similar genre profiles land in the same bucket.
+3. Identify the two most similar users to a target user and recommend movies they have both watched, falling back to top movies of the most similar user when needed.
+
+### 2. Feature Engineering, Dimensionality Reduction & Clustering
+
+Working with a Netflix access dataset from Kaggle:
+
+- **Feature engineering:** the rows are aggregated by user, then 15 new features are derived from the original ones.
+- **Dimensionality reduction:** both **PCA** and **FAMD** (Factor Analysis of Mixed Data) are evaluated. FAMD is chosen for clustering because it handles mixed numerical/categorical features.
+- **Clustering:** an implementation of **k-means from scratch**, both without and with random initialization, plus two strategies for selecting the optimal number of clusters. An additional ChatGPT-suggested clustering algorithm is also evaluated for comparison.
+- **Result analysis:** pivot-table-based analysis of the resulting clusters.
+
+### 3. Command-Line Analytics
+
+Pure command-line analysis of Netflix usage:
+
+1. Find the most-watched Netflix title.
+2. Compute the average time interval between subsequent clicks on `netflix.com`.
+3. Identify the user with the most total time spent on Netflix.
+
+### 4. Algorithmic Optimization
+
+A recursive algorithm is designed to maximize a final score under a custom university grading rule:
+
+1. Recursive solution with full big-O complexity analysis.
+2. An optimized non-recursive version, also analyzed.
+3. A third, even more optimized implementation with its own complexity analysis.
+4. Worked examples to validate correctness.
+
+## Tech Stack
+
+`Python` · `pandas` · `numpy` · `scikit-learn` · `matplotlib` · `seaborn` · `Jupyter` · `Bash`
+
+## Team
+
+This was a team project developed collaboratively by:
+
+- Rahim Rahimov
+- Petra Udovicic
+- Jacopo Orsini
+- **Onur Ozan Sünger**
